@@ -82,7 +82,13 @@ main {
 @media screen and (max-width: 1200px) {
   main {
     padding: 10vh 7.5vh;
-    min-height: 310vh;
+    min-height: 260vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    min-height: 265vh;
   }
 }
 
@@ -112,9 +118,9 @@ main:hover {
     position: static;
     width: 65vw;
     height: 30vh;
-    margin-top: 10%;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
     padding: 2.5%;
-    font-size: 0.8rem;
   }
 }
 
@@ -142,7 +148,7 @@ main:hover {
   .stack_box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 5%;
+    margin-top: 7.5vh;
   }
 }
 
@@ -155,6 +161,12 @@ main:hover {
 @media screen and (max-width: 1200px) {
   .tools {
     margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tools {
+    margin-top: 30vh;
   }
 }
 
@@ -178,14 +190,21 @@ main:hover {
   height: 50vh;
   padding: 5%;
   text-align: left;
-  margin-top: 35vh;
+  margin-top: 15vh;
 }
 
 @media screen and (max-width: 1200px) {
   .personal_info {
     width: 85%;
     height: 100vh;
-    margin-top: 45vh;
+    margin-top: 40vh;
+    margin-bottom: -30vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .personal_info {
+    margin-bottom: -30vh;
   }
 }
 
@@ -218,14 +237,13 @@ main:hover {
 footer {
   width: 50vw;
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-bottom: -15vh;
 }
 
 @media screen and (max-width: 1200px) {
   footer {
     width: 60vw;
-    margin-top: 5vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
