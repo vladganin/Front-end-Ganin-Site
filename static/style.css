@@ -1,0 +1,231 @@
+body, html, * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Variables */
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#df89b5), to(#bfd9fe));
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  font-family: 'Roboto', Times New Roman, sans-serif;
+  font-size: 16px;
+}
+
+/* Styling box above main content */
+header {
+  height: 7.5vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    font-size: 0.6rem;
+  }
+}
+
+/* Nav header */
+.flex_header {
+  width: 25vw;
+  padding: 1%;
+  position: absolute;
+  top: 15vh;
+  right: 16vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .flex_header {
+    width: 35vw;
+    position: static;
+    margin-left: 40%;
+  }
+}
+
+.flex_header a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .flex_header a {
+    margin: 5%;
+  }
+}
+
+.flex_header a:hover {
+  text-decoration: underline;
+}
+
+/* Center content */
+main {
+  min-height: 150vh;
+  width: 87vw;
+  padding: 10%;
+  background-color: white;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 10vh 7.5vh;
+    min-height: 310vh;
+  }
+}
+
+main:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+
+.wrapper .welcome {
+  width: 45vw;
+  height: 30vh;
+  margin-top: 15vh;
+  text-align: left;
+  position: relative;
+  right: 12%;
+  padding: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper .welcome {
+    position: static;
+    width: 65vw;
+    height: 30vh;
+    margin-top: 10%;
+    padding: 2.5%;
+    font-size: 0.8rem;
+  }
+}
+
+.wrapper .welcome h1 {
+  font-family: 'Work Sans', Times New Roman, sans-serif;
+}
+
+/* Icons */
+.stack_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.5vh;
+  width: 100%;
+  height: 25vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .stack_box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 5%;
+  }
+}
+
+.tools {
+  margin-top: 27vh;
+  font-family: 'Work Sans', Times New Roman, sans-serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .tools {
+    margin-top: 15%;
+  }
+}
+
+.tech_icons {
+  width: 5vw;
+  height: 12.5vh;
+  margin: 0 1%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .tech_icons {
+    width: 15vw;
+    margin: 1.5%;
+  }
+}
+
+/* Personal info */
+.personal_info {
+  width: 75%;
+  height: 50vh;
+  padding: 5%;
+  text-align: left;
+  margin-top: 35vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .personal_info {
+    width: 85%;
+    height: 100vh;
+    margin-top: 45vh;
+  }
+}
+
+.personal_info .personal_title {
+  font-family: 'Work Sans', Times New Roman, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.personal_info .list_traits {
+  margin-left: 7vw;
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .personal_info .list_traits {
+    margin-top: 10%;
+  }
+}
+
+.personal_info .list_traits li {
+  margin: 3.5%;
+}
+
+.personal_info .list_traits li:nth-child(3) span {
+  top: 7px;
+}
+
+/* Footer */
+footer {
+  width: 50vw;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: -15vh;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    width: 60vw;
+    margin-top: 5vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
