@@ -62,7 +62,9 @@ main
     transition: all 2s cubic-bezier(.25,.8,.25,1)
     @media screen and (max-width: 1200px)
         padding: 10vh 7.5vh
-        min-height: 310vh
+        min-height: 260vh
+    @media screen and (max-width: 600px)
+        min-height: 265vh
 
 main:hover
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
@@ -84,9 +86,9 @@ main:hover
         position: static
         width: 65vw
         height: 30vh
-        margin-top: 10%
+        margin-top: 10vh
+        margin-bottom: 20vh
         padding: 2.5%
-        font-size: 0.8rem
 
 .wrapper .welcome h1 
     font-family: 'Work Sans', Times New Roman, sans-serif
@@ -102,7 +104,7 @@ main:hover
     height: 25vh
     @media screen and (max-width: 1200px)
         flex-wrap: wrap
-        margin-top: 5%
+        margin-top: 7.5vh
     
 
 .tools
@@ -111,6 +113,8 @@ main:hover
     font-size: 1.5rem
     @media screen and (max-width: 1200px)
         margin-top: 15%
+    @media screen and (max-width: 800px)
+        margin-top: 30vh
 
 .tech_icons
     width: 5vw
@@ -127,11 +131,14 @@ main:hover
     height: 50vh
     padding: 5%
     text-align: left
-    margin-top: 35vh
+    margin-top: 15vh
     @media screen and (max-width: 1200px)
         width: 85%
         height: 100vh
-        margin-top: 45vh
+        margin-top: 40vh
+        margin-bottom: -30vh
+    @media screen and (max-width: 600px)
+        margin-bottom: -30vh
 
 .personal_info .personal_title
     font-family: 'Work Sans', Times New Roman, sans-serif
@@ -143,6 +150,7 @@ main:hover
     margin-top: 5vh
     @media screen and (max-width: 1200px)
         margin-top: 10%
+        margin-bottom
 
 .personal_info .list_traits li 
     margin: 3.5%
@@ -155,8 +163,7 @@ main:hover
 footer 
     width: 50vw
     text-align: center
-    margin-top: 20vh
+    margin-top: 15vh
     margin-bottom: -15vh
     @media screen and (max-width: 1200px)
         width: 60vw
-        margin-top: 5vh
